@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Citezen</title>
+
+    <link rel="stylesheet" href="sidepanel.css">
+
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- HEADER -->
+
+        <div class="topbar">
+
+            <div class="brand">
+
+                <div class="logo">
+                    C
+                </div>
+
+                <div class="brand-info">
+                    <h1>Citezen</h1>
+                    <p>AI-powered Research Workspace</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- QUICK ACTIONS -->
+
+        <div class="quick-actions">
+
+            <button class="action-btn" data-action="summarize">
+                Summarize
+            </button>
+
+            <button class="action-btn" data-action="answer">
+                Answer
+            </button>
+
+            <button class="action-btn" data-action="explain">
+                Explain
+            </button>
+
+            <button class="action-btn" data-action="keypoints">
+                Key Points
+            </button>
+
+        </div>
+
+        <!-- CHAT AREA -->
+
+        <div id="chatContainer" class="chat-container">
+
+            <div class="welcome-card">
+
+                <h2>Welcome to Citezen</h2>
+
+                <p>
+                    Select text from any webpage and ask AI to summarize,
+                    analyze, explain, or refine your research.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- INPUT AREA -->
+
+        <div class="input-area">
+
+            <textarea
+                id="promptInput"
+                placeholder="Ask Citezen anything..."
+                rows="1"
+            ></textarea>
+
+            <button id="sendBtn">
+                Send
+            </button>
+
+        </div>
+
+    </div>
+    <script src="marked.min.js"></script>
+    <script src="sidepanel.js"></script>
+
+</body>
+</html>
